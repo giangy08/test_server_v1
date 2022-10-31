@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: gunicorn testcollegamentov1:app
