@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, redirect, url_for, werkzeug
+from flask import Flask, request
 
 app = Flask(__name__)
 app.secret_key = "ciaone"
@@ -8,6 +8,10 @@ app.secret_key = "ciaone"
 @app.route('/dataexchange',methods = ['POST'])
 def dataexchange():
    if request.method == 'POST':
+       return "Collegamento al server effettuato!"
+
+@app.route('/prova')
+def prova():
        return "Collegamento al server effettuato!"
 
 if __name__ == '__main__':
