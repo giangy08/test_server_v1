@@ -3,6 +3,7 @@ import werkzeug
 
 app = Flask(__name__)
 app.secret_key = "my_secret_key_1"
+app.config['MAX_CONTENT_LENGHT'] = 16 * 1000 * 1000
 
 #selecting a route for our app
 @app.route('/dataexchange',methods = ['POST'])
