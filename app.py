@@ -1,4 +1,5 @@
-from flask import Flask, request, werkzeug
+from flask import Flask, request
+import werkzeug
 
 app = Flask(__name__)
 app.secret_key = "my_secret_key_1"
